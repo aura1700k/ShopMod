@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "shopmod",
+  "version": "${version}",
+  "name": "ShopMod",
+  "description": "Полностью клиентский магазин. ПКМ по верстаку с изумрудом. Валюта: ванильные предметы. Сервер не требует мод.",
+  "authors": ["ShopMod"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.shopmod.ShopModClient"]
+  },
+  "mixins": [
+    "shopmod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "fabric-api": "*",
+    "minecraft": "~1.21.1"
+  }
+}
